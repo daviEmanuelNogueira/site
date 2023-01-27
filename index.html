@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="icon.png" type="image/x-icon" />
-  <title>Document</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-size: 65.5%;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    .container {
-      width: 100%;
-      height: 100vh;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-      border: 1px saddlebrown solid;
-    }
-
-    .mensagem {
-      padding: 10px;
-      font-size: 1.5rem;
-    }
-
-    .flork-img {
-      width: 30%;
-    }
-
-    @media (max-width: 600px) {
-      .flork-img {
-        width: 60%;
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
-    }
-  </style>
-</head>
+      @-moz-keyframes fadeIn {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @-o-keyframes fadeIn {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 
-<body>
-  <div class="container">
-    <div class="mensagem">
-      Passando só pra desejar uma boa noite e um ótimo trabalho ❤️
-    </div>
-    <div class="image">
-      <img src="flork-png-07.png" class="flork-img" title="flork" />
-    </div>
-  </div>
-</body>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 65.5%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+      }
 
+      .container {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .mensagem {
+        text-align: center;
+        font-size: 1.8rem;
+        -webkit-animation: fadeIn 3s ease-in-out infinite;
+        -moz-animation: fadeIn 3s ease-in-out infinite;
+        -o-animation: fadeIn 3s ease-in-out infinite;
+        animation: fadeIn 3s ease-in-out infinite;
+      }
+
+      .flork-img {
+        width: 30%;
+      }
+
+      @media (max-width: 600px) {
+        .flork-img {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="mensagem">You are so beautiful to me🎵❤️</div>
+      <div class="image">
+        <img src="flork-142-png.png" class="flork-img" title="flork" />
+      </div>
+    </div>
+    
+  </body>
 </html>
