@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="icon.png" type="image/x-icon" />
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/2ce45406c6.js" crossorigin="anonymous"></script>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      /* @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 1;
+      }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-size: 65.5%;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      width: 100%;
-      height: 100vh;
-    }
+      50% {
+        opacity: 0;
+      }
 
     .container {
       width: 100%;
@@ -73,89 +69,97 @@
         height: 50%;
       }
     }
-  </style>
-</head>
 
-<body>
-  <div class="container">
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity: 1;
+      }
 
-    <section id="card1" class="card">
-      <div class="cab">
-        <div class="mensagem">Esse é um resumo do meu final de semana sem você</div>
-      </div>
-      <div class="cont">
-        <img src="flork-png-89.png" class="flork-img" alt="flork" />
-      </div>
-      <div class="foot">
-        <a href="#card2">Next</a>
-      </div>
-    </section>
+      50% {
+        opacity: 0;
+      }
 
-    <section id="card2" class="card">
-      <div class="cab">
-        <div class="mensagem">Esse sou eu no sábado porque a gente ia ficar alguns dias sem contato</div>
-      </div>
-      <div class="cont">
-        <img src="flork-png-72.png" class="flork-img" alt="flork" />
-      </div>
-      <div class="foot">
-        <a href="#card3">Next</a>
-      </div>
-    </section>
+      100% {
+        opacity: 1;
+      }
+    }
 
-    <section id="card3" class="card">
-      <div class="cab">
-        <div class="mensagem">Eu no domingo triste contanto os dias</div>
-      </div>
-      <div class="cont">
-        <img src="flork-png-59-541x600.png" class="flork-img" alt="flork" />
-      </div>
-      <div class="foot">
-        <a href="#card4">Next</a>
-      </div>
-    </section>
+    @-o-keyframes fadeIn {
+      0% {
+        opacity: 1;
+      }
 
-    <section id="card4" class="card">
-      <div class="cab">
-        <div class="mensagem">Aqui sou eu ainda no domingo no culto né! rs</div>
-      </div>
-      <div class="cont">
-        <img src="flork-png-61.png" class="flork-img" alt="flork" />
-      </div>
-      <div class="foot">
-        <a href="#card5">Next</a>
-      </div>
-    </section>
+      50% {
+        opacity: 0;
+      }
 
-    <section id="card5" class="card">
-      <div class="cab">
-        <div class="mensagem">Aqui já sou eu tomando meu café na segunda, existindo!</div>
-      </div>
-      <div class="cont">
-        <img src="flork-png-54.png" class="flork-img" alt="flork" />
-      </div>
-      <div class="foot">
-        <a href="#card6">Next</a>
-      </div>
-    </section>
+      100% {
+        opacity: 1;
+      }
+    }
 
-    <section id="card6" class="card">
-      <div class="cab">
-        <div class="mensagem">Aqui sou eu feliz porque você está vendo isso, porque se você está vendo isso é sinal que você já voltou❤️</div>
-      </div>
-      <div class="cont">
-        <img src="flork-png-18.png" class="flork-img" alt="flork" />
-      </div>
-      <div class="foot">
-        <a href="#card1">Next</a>
-      </div>
-    </section>
+    @keyframes fadeIn {
+      0% {
+        opacity: 1;
+      }
 
-    <!-- <div class="mensagem">Cantares 4:7❤️</div> -->
-    <!-- <div class="image">
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    } */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 65.5%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .mensagem {
+        position: absolute;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1.8rem;
+        /* -webkit-animation: fadeIn 3s ease-in-out infinite;
+      -moz-animation: fadeIn 3s ease-in-out infinite;
+      -o-animation: fadeIn 3s ease-in-out infinite;
+      animation: fadeIn 3s ease-in-out infinite; */
+      }
+
+      .flork-img {
+        width: 30%;
+      }
+
+      @media (max-width: 600px) {
+        .flork-img {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <div class="mensagem">Cantares 4:7❤️</div> -->
+      <div class="image">
         <img src="flork-png-89.png" class="flork-img" title="flork" />
-      </div> -->
-  </div>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
